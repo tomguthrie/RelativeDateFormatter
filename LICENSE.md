@@ -1,3 +1,5 @@
+THE MIT License (MIT)
+
 Copyright (c) 2015 Thomas Guthrie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
