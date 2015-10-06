@@ -1,6 +1,8 @@
 # RelativeDateFormatter
 
-Mail.app style relative date formatter.
+Mail.app style relative date formatter. A reimplementation of
+[TFGRelativeDateFormatter](https://github.com/tomguthrie/TFGRelativeDateFormatter)
+written in Swift and usable from both Swift or Objective-C.
 
 ## Examples
 
