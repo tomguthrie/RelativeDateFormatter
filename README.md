@@ -14,20 +14,24 @@ Mail.app style relative date formatter.
 
 ## Usage
 
+`RelativeDateFormatter` instances should be cached where possible, similar to
+`NSDateFormatter` they are expensive to initialize.
+
+### Swift
+
 ```swift
 let date = ...
 let formatter = RelativeDateFormatter()
 let relativeString = formatter.stringForDate(date)
 ```
 
+### Objective-C
+
 ```objective-c
 NSDate *date = ...;
 TFGRelativeDateFormatter *formatter = [[TFGRelativeDateFormatter alloc] init];
 NSString *relativeString = [formatter stringForDate:date];
 ```
-
-`RelativeDateFormatter` instances should be cached where possible, similar to
-`NSDateFormatter` they are expensive to initialize.
 
 ## Contact
 
