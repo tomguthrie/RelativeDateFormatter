@@ -1,8 +1,11 @@
 # RelativeDateFormatter
 
+__This version only works on developmenet snapshots for Swift 3.0. Unsure about
+wether it still works correctly in ObjC.__
+
 Mail.app style relative date formatter. A reimplementation of
 [TFGRelativeDateFormatter](https://github.com/tomguthrie/TFGRelativeDateFormatter)
-written in Swift and usable from both Swift or Objective-C.
+written in Swift.
 
 ## Examples
 
@@ -17,22 +20,23 @@ written in Swift and usable from both Swift or Objective-C.
 ## Usage
 
 `RelativeDateFormatter` instances should be cached where possible, similar to
-`NSDateFormatter` they are expensive to initialize.
+`DateFormatter` they are expensive to initialize.
 
 ### Swift
 
 ```swift
 let date = ...
 let formatter = RelativeDateFormatter()
-let relativeString = formatter.stringForDate(date)
+let relativeString = formatter.string(from: date)
 ```
 
-### Objective-C
+Or, for a string relative to some other date:
 
-```objective-c
-NSDate *date = ...;
-TFGRelativeDateFormatter *formatter = [[TFGRelativeDateFormatter alloc] init];
-NSString *relativeString = [formatter stringForDate:date];
+```swift
+let date = ...
+let otherDate = ...
+let formatter = RelativeDateFormatter()
+let relativeString = formatter.string(from: date, relativeTo: otherDate)
 ```
 
 ## Contact
@@ -42,4 +46,4 @@ NSString *relativeString = [formatter stringForDate:date];
 
 ## License
 
-RelativeDateFormatter is released under the [MIT License](LICENSE.md).
+RelativeDateFormatter is released under the [MIT License](LICENSE).

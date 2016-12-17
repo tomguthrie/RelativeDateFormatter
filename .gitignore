@@ -27,3 +27,6 @@ xcuserdata
 Carthage/Checkouts
 Carthage/Build
 RelativeDateFormatter.framework.zip
+
+## SwiftPM
+.build/
